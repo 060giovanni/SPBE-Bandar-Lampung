@@ -1,1 +1,3 @@
-"# backend-spbe"
+to install:
+npm install
+npm run dev

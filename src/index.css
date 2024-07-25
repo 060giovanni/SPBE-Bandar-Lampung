@@ -6,7 +6,11 @@
 
 :root {
   --primary-color: #ffff;
+<<<<<<< HEAD
   --secondary-color: #d72c2c;
+=======
+  --secondary-color: #3580dc;
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   --color-text: #231942;
   --navbar-color: #ffffff;
   --navbar-color-text: #114466;

@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import './Login.css'
+<<<<<<< HEAD
 import { Form, Input, message } from "antd";
 import axios from "axios";
 import Cookies from "js-cookie";
@@ -24,6 +25,12 @@ const Login = () => {
     }
   }
 
+=======
+import { Form, Input } from "antd";
+
+const Login = () => {
+  const [form] = Form.useForm();
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   return (
     <div className="login-container">
       <div className="container">
@@ -48,9 +55,13 @@ const Login = () => {
               </Form.Item>
             </div>
           </Form>
+<<<<<<< HEAD
           <Button type='primary' className='login-button'
             onClick={handleLogin}
           >Login</Button>
+=======
+          <Button type='primary' className='login-button'>Login</Button>
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
         </div>
       </div>
     </div>

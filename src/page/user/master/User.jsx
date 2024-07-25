@@ -1,17 +1,30 @@
+<<<<<<< HEAD
 import { Button, Space, Table } from "antd";
+=======
+import { SearchOutlined } from "@ant-design/icons";
+import { Button, Input, Space, Table } from "antd";
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 import { Popconfirm, Tag } from "antd";
 import { useCallback, useState } from "react";
 import './User.css'
 import { DeleteApi } from "../../../services/DeleteApi";
 import AddUser from "../add/AddUser";
 import EditUser from "../edit/EditUser";
+<<<<<<< HEAD
 import { useUserPagination } from "../../../hooks/user/useUserPagination";
+=======
+import { useUserPagination } from "../../../hooks/useUserPagination";
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 import ResetPasswordUser from "../reset/ResetPasswordUser";
 
 const User = () => {
    const [dataId, setDataId] = useState("");
    const [showAddUser, setShowAddUser] = useState(false);
    const [showEditUser, setShowEditUser] = useState(false);
+<<<<<<< HEAD
+=======
+   const [keyword, setKeyword] = useState("");
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
    const [dataTable, setDataTable] = useState({
       current_page: 1,
       per_page: 15,
@@ -20,7 +33,11 @@ const User = () => {
    const [showResetPassword, setShowResetPassword] = useState(false);
    const { data, isLoading, isFetching, refetch } = useUserPagination(
       dataTable,
+<<<<<<< HEAD
       ''
+=======
+      keyword
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
    );
 
 
@@ -46,6 +63,14 @@ const User = () => {
       setDataId("");
    };
 
+<<<<<<< HEAD
+=======
+   const handleChange = (param) => {
+      setKeyword(param.target.value);
+   };
+
+
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
    const columns = [
       {
          title: "No",
@@ -59,8 +84,19 @@ const User = () => {
          align: "left",
       },
       {
+<<<<<<< HEAD
          title: "Nama",
          dataIndex: "name",
+=======
+         title: "First Name",
+         dataIndex: "first_name",
+         align: "left",
+         width: window.innerWidth > 800 ? 200 : 150,
+      },
+      {
+         title: "Last Name",
+         dataIndex: "last_name",
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
          align: "left",
          width: window.innerWidth > 800 ? 200 : 150,
       },
@@ -71,12 +107,30 @@ const User = () => {
       },
       {
          title: "Aksi",
+<<<<<<< HEAD
          dataIndex: "id",
+=======
+         dataIndex: "_id",
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
          align: "center",
          width: window.innerWidth > 800 ? 300 : 200,
          render: (id) => {
             return (
                <>
+<<<<<<< HEAD
+=======
+                  {/* <Tag
+                     color="blue"
+                     style={
+                        { cursor: "pointer" }
+                     }
+                     onClick={() => {
+                        navigate(`/dashboard/article/${id}`);
+                     }}
+                  >
+                     Detail
+                  </Tag> */}
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
                   <Tag
                      color="orange"
                      style={
@@ -168,6 +222,17 @@ const User = () => {
                </Button>
             </Space>
          </div>
+<<<<<<< HEAD
+=======
+         <div className="search-wrapper filter-wrapper">
+            <Input
+               prefix={<SearchOutlined />}
+               value={keyword}
+               onChange={handleChange}
+               placeholder="Cari Artikel berdasarkan Judul atau kategori"
+            />
+         </div>
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
          <Table
             size="small"
             tableLayout="auto"

@@ -1,4 +1,51 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  "dependencies": {
+    "@google-cloud/storage": "^7.6.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.2",
+    "nodemon": "^3.1.4",
+    "pg": "^8.11.3",
+    "sequelize": "^6.33.0",
+    "uuid": "^9.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "name": "tugas-4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "debug": "ndb server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "ndb": "^1.1.5",
+    "prettier": "^2.8.4"
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   "name": "fe-wehealth",
   "private": true,
   "version": "0.0.0",
@@ -15,10 +62,15 @@
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.2",
+<<<<<<< HEAD
     "dayjs": "^1.11.12",
     "firebase": "^10.7.0",
     "js-cookie": "^3.0.5",
     "moment": "^2.30.1",
+=======
+    "firebase": "^10.7.0",
+    "js-cookie": "^3.0.5",
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -38,5 +90,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "vite": "^4.4.5"
+<<<<<<< HEAD
+=======
+>>>>>>> 38230ccde5392e1c01bd9db23c55197e2d9e9ce4
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   }
 }

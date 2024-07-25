@@ -2,20 +2,27 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 120px;
+<<<<<<< HEAD
   gap: 12px;
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 }
 
 .galeri-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
+<<<<<<< HEAD
   text-align: left;
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 }
 
 .galeri-date {
   font-size: 1rem;
   margin-bottom: 1rem;
   margin: 0;
+<<<<<<< HEAD
   text-align: left;
 }
 
@@ -36,4 +43,6 @@
   width: 400px;
   height: 300px;
   object-fit: contain; /* Ensures the image scales down to fit the box without cropping */
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 }

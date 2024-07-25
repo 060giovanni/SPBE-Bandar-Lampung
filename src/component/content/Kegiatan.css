@@ -4,7 +4,10 @@
   align-items: center;
   margin-bottom: 24px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 .kegiatan-title-box a {
   text-decoration: none;
   color: #000;
@@ -34,14 +37,21 @@
 }
 
 .kegiatan-box {
+<<<<<<< HEAD
+=======
+  /* height: 560px; */
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   position: relative;
 }
 
 .kegiatan-box img {
   display: block;
+<<<<<<< HEAD
   width: 400px;
   height: 300px;
   object-fit: contain; /* Ensures the image scales down to fit the box without cropping */
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   transition: filter 0.3s ease;
 }
 
@@ -49,7 +59,11 @@
   display: none;
   position: absolute;
   top: 70%;
+<<<<<<< HEAD
   left: 50%;
+=======
+  left: 40%;
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -64,7 +78,10 @@
 
 .button-kegiatan {
   background-color: #15547e;
+<<<<<<< HEAD
   width: 50%;
+=======
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   color: #fff;
   padding: 10px 20px;
   border: none;

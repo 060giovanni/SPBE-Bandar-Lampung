@@ -7,6 +7,10 @@ import {
 } from "antd";
 import axios from "axios";
 import { useState } from "react";
+<<<<<<< HEAD
+=======
+const { TextArea } = Input;
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
 import propTypes from "prop-types";
 import { userRoles } from "../constant";
 
@@ -23,10 +27,17 @@ const AddUser = ({ show, onCreate, onCancel }) => {
          const values = await form.validateFields();
          setLoading(true);
 
+<<<<<<< HEAD
          await axios.post(
             VITE_BASE_URL + `/api/v1/users/signup`, values,
          );
          message.success("User Berhasil Dibuat");
+=======
+         const { data } = await axios.post(
+            VITE_BASE_URL + `/api/v1/auth/register`, values,
+         );
+         message.success(data.message);
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
          form.resetFields();
          onCreate();
       } catch (error) {
@@ -41,6 +52,11 @@ const AddUser = ({ show, onCreate, onCancel }) => {
       onCancel();
    };
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
    return (
       <Modal
          open={show}
@@ -68,13 +84,40 @@ const AddUser = ({ show, onCreate, onCancel }) => {
                   <Input.Password />
                </Form.Item>
                <Form.Item
+<<<<<<< HEAD
                   name="name"
                   label="Nama"
+=======
+                  name="first_name"
+                  label="First Name"
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
                   rules={[{ required: true, message: "Harap diisi" }]}
                >
                   <Input />
                </Form.Item>
                <Form.Item
+<<<<<<< HEAD
+=======
+                  name="last_name"
+                  label="Last Name"
+                  rules={[{ required: true, message: "Harap diisi" }]}
+               >
+                  <Input />
+               </Form.Item>
+               <Form.Item
+                  name="phone"
+                  label="No Telepon"
+               >
+                  <Input />
+               </Form.Item>
+               <Form.Item
+                  name="address"
+                  label="Alamat"
+               >
+                  <TextArea />
+               </Form.Item>
+               <Form.Item
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
                   name="role"
                   label="Role"
                >

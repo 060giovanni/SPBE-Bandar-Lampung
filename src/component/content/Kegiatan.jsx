@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
 import './Kegiatan.css';
 import { useState } from "react";
@@ -18,6 +19,12 @@ const Kegiatan = () => {
       ''
    );
 
+=======
+import { Link } from "react-router-dom"
+import './Kegiatan.css'
+
+const Kegiatan = () => {
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
    const responsive = {
       desktop: {
          breakpoint: { max: 3000, min: 1024 },
@@ -46,11 +53,19 @@ const Kegiatan = () => {
                   </div>
                   <h2>Galeri Kegiatan</h2>
                </div>
+<<<<<<< HEAD
                <Link to="/kegiatan">Lihat Semua</Link>
+=======
+               <Link>Lihat Semua</Link>
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
             </div>
             <Carousel
                swipeable={false}
                draggable={false}
+<<<<<<< HEAD
+=======
+               // showDots={true}
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
                responsive={responsive}
                ssr={false} // means to render carousel on server-side.
                infinite={true}
@@ -60,6 +75,7 @@ const Kegiatan = () => {
                transitionDuration={500}
                containerClass="carousel-container"
                removeArrowOnDeviceType={["tablet", "mobile"]}
+<<<<<<< HEAD
                dotListClass="custom-dot-list-style"
                itemClass="carousel-item-padding-40-px"
             >
@@ -98,3 +114,32 @@ const Kegiatan = () => {
 }
 
 export default Kegiatan;
+=======
+               // deviceType={this.props.deviceType}
+               dotListClass="custom-dot-list-style"
+               itemClass="carousel-item-padding-40-px"
+            >
+               <div className="kegiatan-box">
+                  <img src="/assets/img/kegiatan.png" alt="" />
+                  <button className="button-kegiatan">Lihat Kegiatan</button>
+               </div>
+               <div className="kegiatan-box">
+                  <img src="/assets/img/kegiatan.png" alt="" />
+                  <button className="button-kegiatan">Lihat Kegiatan</button>
+               </div>
+               <div className="kegiatan-box">
+                  <img src="/assets/img/kegiatan.png" alt="" />
+                  <button className="button-kegiatan">Lihat Kegiatan</button>
+               </div>
+               <div className="kegiatan-box">
+                  <img src="/assets/img/kegiatan.png" alt="" />
+                  <button className="button-kegiatan">Lihat Kegiatan</button>
+               </div>
+            </Carousel>
+         </div>
+      </div>
+   )
+}
+
+export default Kegiatan
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018

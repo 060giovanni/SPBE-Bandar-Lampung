@@ -14,6 +14,7 @@ const Navbars = () => {
   const [changeColor, setChangeColor] = useState(false);
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   const user = Cookies.get('user') && JSON.parse(Cookies.get('user'));
   const email = user?.email;
   const role = user?.role;
@@ -22,6 +23,16 @@ const Navbars = () => {
   const handleLogout = () => {
     Cookies.remove('token');
     Cookies.remove('user');
+=======
+  const email = Cookies.get('email');
+
+  const handleLogout = () => {
+    console.log('logout');
+    Cookies.remove('token');
+    Cookies.remove('email');
+    Cookies.remove('role');
+    Cookies.remove('id');
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
     navigate('/login');
   };
 
@@ -33,10 +44,19 @@ const Navbars = () => {
   };
 
   const itemsUser = [
+<<<<<<< HEAD
     role === 'admin' && {
       key: 'dashboard',
       label: <span>Dashboard</span>,
     },
+=======
+    { key: 'profile', label: <span>Profile</span> },
+    Cookies.get('role') === 'admin' && {
+      key: 'dashboard',
+      label: <span>Dashboard</span>,
+    },
+    { key: 'chat', label: <span>Konsultasi</span> },
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
     { key: 'logout', label: <span>Logout</span> },
   ];
 
@@ -50,9 +70,24 @@ const Navbars = () => {
 
   useEffect(() => {
     changeBackgroundColor();
+<<<<<<< HEAD
     window.addEventListener('scroll', changeBackgroundColor);
   });
 
+=======
+
+    window.addEventListener('scroll', changeBackgroundColor);
+  });
+
+  const [isLogin, setIsLogin] = useState(false);
+
+  useEffect(() => {
+    if (Cookies.get('token')) {
+      setIsLogin(true);
+    }
+  }, []);
+
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
   return (
     <div>
       <Navbar
@@ -69,6 +104,10 @@ const Navbars = () => {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='text-center'>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
               {navLinks.map((link) => {
                 return (
                   <div className='nav-link'
@@ -87,6 +126,7 @@ const Navbars = () => {
                   </div>
                 );
               })}
+<<<<<<< HEAD
               {isLogin ? (
                 <>
                   <div className='header-container'>
@@ -122,6 +162,19 @@ const Navbars = () => {
                   </div>
                 </>
               )}
+=======
+              <div className='nav-link'>
+                <NavLink
+                  to='/login'
+                  className={({ isActive, isPending }) =>
+                    isPending ? 'pending' : isActive ? 'active' : ''
+                  }
+                  end
+                >
+                  LOGIN
+                </NavLink>
+              </div>
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
             </Nav>
 
             {/* <ul className='navbar-nav ms-auto mb-2 mb-lg-0 navbar-user text-center'>

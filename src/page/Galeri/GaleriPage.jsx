@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import './GaleriPage.css';
 import { useGaleriPagination } from "../../hooks/galeri/useGaleriPagination";
@@ -58,3 +59,33 @@ const GaleriPage = () => {
 }
 
 export default GaleriPage;
+=======
+import './GaleriPage.css'
+
+const GaleriPage = () => {
+   return (
+      <div className="galeri-box-container">
+         <div className="galeri-box">
+            <img src="/assets/img/kegiatan.png" alt="" />
+            <p className="galeri-title">
+               Judul kegiatan 1
+            </p>
+            <p className="galeri-date">
+               Tanggal bulan tahun
+            </p>
+         </div>
+         <div className="galeri-box">
+            <img src="/assets/img/kegiatan.png" alt="" />
+            <p className="galeri-title">
+               Judul kegiatan 1
+            </p>
+            <p className="galeri-date">
+               Tanggal bulan tahun
+            </p>
+         </div>
+      </div>
+   )
+}
+
+export default GaleriPage
+>>>>>>> 62162abaed31ed7818ca58c947c8073cd02b3018
